@@ -7,7 +7,7 @@ public class MouseActions : MonoBehaviour
 
     public int radiusGarageDoor = 2;
     public GameObject garageDoor;
-
+    public int reviveCount;
     public delegate void Sabotage();
     public static event Sabotage OnSabotage;
 
@@ -26,4 +26,5 @@ public class MouseActions : MonoBehaviour
         
         return isEnoughNear && !isAlreadySabotaged;
     }
+    
 }

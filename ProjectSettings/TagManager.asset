@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BoutonPorte
   - MouseTrap
+  - ReviveItem
   layers:
   - Default
   - TransparentFX
