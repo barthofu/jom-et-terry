@@ -1433,6 +1433,36 @@ Transform:
   m_Father: {fileID: 2106575169}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &468216822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 468216823}
+  m_Layer: 0
+  m_Name: "Mod\xE8le3D_BoutonBoite (Missing Prefab)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &468216823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468216822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1805451121}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &470342201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1598,7 +1628,7 @@ Transform:
   - {fileID: 900704650}
   - {fileID: 1776680596}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &546295081
 GameObject:
@@ -1641,10 +1671,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 546295081}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 633479d5b48ae374a8893aa43030f3b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b67329b87cbb5147a16c182cb9f68fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 200
+  mouseSensitivity: 100
   playerBody: {fileID: 1159467636}
 --- !u!20 &546295085
 Camera:
@@ -1739,7 +1769,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31517fc250d4a8449996ff7c88ef196b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trapText: {fileID: 559081112}
 --- !u!114 &559081112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2246,6 +2275,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 756d55620f4b0ba4f9f8b4c340b5801d, type: 3}
+--- !u!4 &700394183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791055805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 934640728}
+  m_Father: {fileID: 1805451121}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &700394184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656151495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1805451121}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &700394185 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 700394182}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &701986704
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,7 +2478,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 6.45e-43, y: -7.729221e-19, z: 4.5904e-41, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2432,7 +2495,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &758179225
 GameObject:
@@ -2628,6 +2691,22 @@ Transform:
   m_Father: {fileID: 341120526}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &791055805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 700394183}
+  m_Layer: 0
+  m_Name: "Mod\xE8le3D_BoutonBoite (Missing Prefab)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!850595691 &799915112
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -2722,7 +2801,7 @@ Transform:
   - {fileID: 1629959153}
   - {fileID: 166356106}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &860257914
 GameObject:
@@ -2788,7 +2867,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &895347713
 GameObject:
@@ -3108,12 +3187,6 @@ Transform:
   m_Father: {fileID: 341120526}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &934640727 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 756d55620f4b0ba4f9f8b4c340b5801d,
-    type: 3}
-  m_PrefabInstance: {fileID: 700394182}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &934640728 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 756d55620f4b0ba4f9f8b4c340b5801d,
@@ -3353,10 +3426,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1065436316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 633479d5b48ae374a8893aa43030f3b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b67329b87cbb5147a16c182cb9f68fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 200
+  mouseSensitivity: 100
   playerBody: {fileID: 1777550370}
 --- !u!81 &1065436319
 AudioListener:
@@ -3614,7 +3687,7 @@ GameObject:
   - component: {fileID: 1159467637}
   m_Layer: 0
   m_Name: Mouse
-  m_TagString: Untagged
+  m_TagString: Mouse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3646,7 +3719,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1159467633}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1ed477163c82548b998b62f8d51d7c, type: 3}
+  m_Script: {fileID: 11500000, guid: bf71bb04035ff794bb9af29de9d274d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSpeed: 12
@@ -3665,7 +3738,7 @@ Transform:
   - {fileID: 579522158}
   - {fileID: 546295082}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1159467637
 MonoBehaviour:
@@ -3693,6 +3766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f8ec8e4bdfeec48812907bec68c776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ogwill: 100
+  hp: 100
   will: 100
   deadCount: 0
 --- !u!1 &1191697262
@@ -4429,6 +4504,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428506989}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1529009147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1529009148}
+  m_Layer: 0
+  m_Name: "Mod\xE8le3D_BoutonBoite (Missing Prefab)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1529009148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529009147}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1805451121}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1531566178
 GameObject:
   m_ObjectHideFlags: 0
@@ -4724,6 +4829,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629959152}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1656151495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 700394184}
+  m_Layer: 0
+  m_Name: "Mod\xE8le3D_BoutonBoite (Missing Prefab)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1663775713
 GameObject:
   m_ObjectHideFlags: 0
@@ -5022,8 +5143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3dad39a60deff4458fbf583c5752140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damages: 10
-  range: 100
 --- !u!1 &1755356049
 GameObject:
   m_ObjectHideFlags: 0
@@ -5229,7 +5348,7 @@ GameObject:
   - component: {fileID: 1777550371}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5250,7 +5369,7 @@ Transform:
   - {fileID: 1970859146}
   - {fileID: 256871336}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 185.056, z: 0}
 --- !u!114 &1777550371
 MonoBehaviour:
@@ -5261,7 +5380,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1777550369}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43ca28ff8e1a5134bbcf5fda4cc96e9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 76252dd46e5fadf469e7473551c4a206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
@@ -5275,7 +5394,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   mouseCam: {fileID: 546295085}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1065436320}
 --- !u!143 &1777550372
 CharacterController:
   m_ObjectHideFlags: 0
@@ -5303,7 +5422,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1777550369}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8a4d85015065c64198085728e45dd69, type: 3}
+  m_Script: {fileID: 11500000, guid: 451c93298de21f84dadf308a7f3b4036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rayLength: 10
@@ -5311,7 +5430,8 @@ MonoBehaviour:
   radiusGarageDoorButton: 5
   mouseTrapPrefab: {fileID: 6113746060053906462, guid: 210c19e0b5fff354fb34cf5d031b4470,
     type: 3}
-  garageDoorButton: {fileID: 934640727}
+  garageDoorButton: {fileID: 919132149155446097, guid: 53ff2010d9f7d654c8b0a898a6441eae,
+    type: 3}
   garageDoor: {fileID: 500063281}
 --- !u!1 &1777782713
 GameObject:
@@ -5435,9 +5555,44 @@ Transform:
   m_LocalPosition: {x: -11.86, y: 4.94, z: -309.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 934640728}
+  - {fileID: 700394183}
+  - {fileID: 468216823}
+  - {fileID: 700394184}
+  - {fileID: 1529009148}
+  - {fileID: 2085328595}
+  - {fileID: 700394185}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1812183573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1812183574}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1812183574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812183573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830244869
 GameObject:
@@ -5920,6 +6075,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071825002}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2085328594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2085328595}
+  m_Layer: 0
+  m_Name: "Mod\xE8le3D_BoutonBoite (Missing Prefab)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2085328595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085328594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1805451121}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2106575168
 GameObject:
   m_ObjectHideFlags: 0
