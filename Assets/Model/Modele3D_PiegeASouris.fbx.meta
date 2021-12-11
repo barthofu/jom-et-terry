@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: bf75464bdaa5afe43ad5cee669871284
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -35690166872146887
+    second: "Base pi\xE8ge|Base pi\xE8geAction"
+  - first:
+      74: -6393412995530925676
+    second: "Base pi\xE8ge|bigoudiAction"
+  - first:
+      74: -4775252037338413839
+    second: "Base pi\xE8ge|CameraAction"
+  - first:
+      74: 5666638661562525667
+    second: "Base pi\xE8ge|crochet loquetAction"
+  - first:
+      74: 7924574553781432060
+    second: "Base pi\xE8ge|EcraseRatAction"
+  - first:
+      74: 8584852574724864746
+    second: "Base pi\xE8ge|jsp mais loquetAction"
+  - first:
+      74: 8398279046127165210
+    second: "Base pi\xE8ge|lumiereAction"
+  - first:
+      74: 569669303310974565
+    second: "Base pi\xE8ge|Point miroir bigoudiAction"
+  - first:
+      74: 5974360926875314362
+    second: "Base pi\xE8ge|Point miroir crochetAction"
+  - first:
+      74: 1693896421822825271
+    second: "Camera|Base pi\xE8geAction"
+  - first:
+      74: -2273456802902527425
+    second: Camera|bigoudiAction
+  - first:
+      74: 8440248360967096626
+    second: Camera|CameraAction
+  - first:
+      74: -1914889067304438425
+    second: Camera|crochet loquetAction
+  - first:
+      74: -2131838331811537809
+    second: Camera|EcraseRatAction
+  - first:
+      74: -1334326123144198471
+    second: Camera|jsp mais loquetAction
+  - first:
+      74: 8835656609798817996
+    second: Camera|lumiereAction
+  - first:
+      74: -5343313158301568435
+    second: Camera|Point miroir bigoudiAction
+  - first:
+      74: -898135278604714188
+    second: Camera|Point miroir crochetAction
+  - first:
+      74: 3948016682425701679
+    second: "EcraseRat|Base pi\xE8geAction"
+  - first:
+      74: 383387251417627672
+    second: EcraseRat|bigoudiAction
+  - first:
+      74: -1518160864971519979
+    second: EcraseRat|CameraAction
+  - first:
+      74: 6409778981063360634
+    second: EcraseRat|crochet loquetAction
+  - first:
+      74: 3353379930036009428
+    second: EcraseRat|EcraseRatAction
+  - first:
+      74: -8858645693662218612
+    second: EcraseRat|jsp mais loquetAction
+  - first:
+      74: 7243572343723098072
+    second: EcraseRat|lumiereAction
+  - first:
+      74: 9153946448606892164
+    second: EcraseRat|Point miroir bigoudiAction
+  - first:
+      74: 249359534724191483
+    second: EcraseRat|Point miroir crochetAction
+  - first:
+      74: 9101709429622868515
+    second: "bigoudi|Base pi\xE8geAction"
+  - first:
+      74: 4022967461451760050
+    second: bigoudi|bigoudiAction
+  - first:
+      74: 4682665713774118358
+    second: bigoudi|CameraAction
+  - first:
+      74: -1113712770902007663
+    second: bigoudi|crochet loquetAction
+  - first:
+      74: -3424193503227881715
+    second: bigoudi|EcraseRatAction
+  - first:
+      74: -3146192135946370449
+    second: bigoudi|jsp mais loquetAction
+  - first:
+      74: 311551992593189734
+    second: bigoudi|lumiereAction
+  - first:
+      74: -1785894812713955913
+    second: bigoudi|Point miroir bigoudiAction
+  - first:
+      74: 4331955645865930262
+    second: bigoudi|Point miroir crochetAction
+  - first:
+      74: 3107338585720964791
+    second: "lumiere|Base pi\xE8geAction"
+  - first:
+      74: 322763496152362417
+    second: lumiere|bigoudiAction
+  - first:
+      74: -3473335783374923047
+    second: lumiere|CameraAction
+  - first:
+      74: -7702157438232118798
+    second: lumiere|crochet loquetAction
+  - first:
+      74: 388544634980946682
+    second: lumiere|EcraseRatAction
+  - first:
+      74: -8818360787736266430
+    second: lumiere|jsp mais loquetAction
+  - first:
+      74: -244157991949360228
+    second: lumiere|lumiereAction
+  - first:
+      74: 3789177053196209744
+    second: lumiere|Point miroir bigoudiAction
+  - first:
+      74: -1388613557983994995
+    second: lumiere|Point miroir crochetAction
+  - first:
+      74: -1914414069723368083
+    second: "jsp mais loquet|Base pi\xE8geAction"
+  - first:
+      74: -5047628707185951937
+    second: jsp mais loquet|bigoudiAction
+  - first:
+      74: 3403394857251550899
+    second: jsp mais loquet|CameraAction
+  - first:
+      74: -464513885120343529
+    second: jsp mais loquet|crochet loquetAction
+  - first:
+      74: 6410302010451530580
+    second: jsp mais loquet|EcraseRatAction
+  - first:
+      74: -61705824852427489
+    second: jsp mais loquet|jsp mais loquetAction
+  - first:
+      74: -5320139989410229618
+    second: jsp mais loquet|lumiereAction
+  - first:
+      74: 1979699815998189440
+    second: jsp mais loquet|Point miroir bigoudiAction
+  - first:
+      74: 1793166771453806782
+    second: jsp mais loquet|Point miroir crochetAction
+  - first:
+      74: 4191029409929582483
+    second: "crochet loquet|Base pi\xE8geAction"
+  - first:
+      74: 6306921273377493253
+    second: crochet loquet|bigoudiAction
+  - first:
+      74: 8644707345129203885
+    second: crochet loquet|CameraAction
+  - first:
+      74: 6569356516729562672
+    second: crochet loquet|crochet loquetAction
+  - first:
+      74: -362967617560768130
+    second: crochet loquet|EcraseRatAction
+  - first:
+      74: 7780410082902284909
+    second: crochet loquet|jsp mais loquetAction
+  - first:
+      74: -621450241901867400
+    second: crochet loquet|lumiereAction
+  - first:
+      74: -2947395661151628414
+    second: crochet loquet|Point miroir bigoudiAction
+  - first:
+      74: 2757497765996210668
+    second: crochet loquet|Point miroir crochetAction
+  - first:
+      74: 3607129271317054400
+    second: "Point miroir bigoudi|Base pi\xE8geAction"
+  - first:
+      74: 7853464086009770101
+    second: Point miroir bigoudi|bigoudiAction
+  - first:
+      74: -3414455536109117011
+    second: Point miroir bigoudi|CameraAction
+  - first:
+      74: 2061392630186070012
+    second: Point miroir bigoudi|crochet loquetAction
+  - first:
+      74: -4785543251338004090
+    second: Point miroir bigoudi|EcraseRatAction
+  - first:
+      74: 4811841992042284357
+    second: Point miroir bigoudi|jsp mais loquetAction
+  - first:
+      74: -5122049415118117650
+    second: Point miroir bigoudi|lumiereAction
+  - first:
+      74: -1137977853632182991
+    second: Point miroir bigoudi|Point miroir bigoudiAction
+  - first:
+      74: 8006603858702569439
+    second: Point miroir bigoudi|Point miroir crochetAction
+  - first:
+      74: -1173309574597069518
+    second: "Point miroir crochet|Base pi\xE8geAction"
+  - first:
+      74: -8435065093167949812
+    second: Point miroir crochet|bigoudiAction
+  - first:
+      74: -3375457341740049397
+    second: Point miroir crochet|CameraAction
+  - first:
+      74: -6290907670340551839
+    second: Point miroir crochet|crochet loquetAction
+  - first:
+      74: -3330660313999278926
+    second: Point miroir crochet|EcraseRatAction
+  - first:
+      74: 5974537765557724991
+    second: Point miroir crochet|jsp mais loquetAction
+  - first:
+      74: 3051024646160172584
+    second: Point miroir crochet|lumiereAction
+  - first:
+      74: -9055411990852988336
+    second: Point miroir crochet|Point miroir bigoudiAction
+  - first:
+      74: 3452157065611034876
+    second: Point miroir crochet|Point miroir crochetAction
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
