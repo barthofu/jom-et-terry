@@ -20,6 +20,6 @@ public class TrapCounter : MonoBehaviour
     // Update is called once per frame
     void Update () {
         nbMouseTrap = playerActions.maxNumberOfMouseTraps - playerActions.GetAmountOfMouseTraps();
-        trapText.text = "pi�ges : " + nbMouseTrap;
+        trapText.text = "pièges : " + nbMouseTrap;
     }
 }

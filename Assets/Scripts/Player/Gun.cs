@@ -1,7 +1,6 @@
 using UnityEngine;
 
-public class Gun : MonoBehaviour
-{
+public class Gun : MonoBehaviour {
 
     public int damages = 10;
     public float range = 100f;
