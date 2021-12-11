@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MouseTrap
   - Mouse
+  - BoutonPorte
   layers:
   - Default
   - TransparentFX
