@@ -3,24 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SphereEffect : MonoBehaviour
-{
+{ 
 
-    GameObject mouse;
-    MouseMovement mouseMovement;
+    GameObject mouse, mouseFake;
+    Mouse Mouse;
+    int v;
 
-    void OnTriggerEnter (Collider other) {
-        giveDamages(other);
-    }
-    
-    void OnTriggerStay (Collider other) {
-        giveDamages(other);
-    }
-
-    private void giveDamages (Collider other) {
-        Mouse mouse = other.gameObject.GetComponent<Mouse>();
-        if (mouse) {
-            mouse.TakeDamages(1);
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Mouse")
+        {
+            mouse = other.gameObject;
+            Mouse = mouse.GetComponent<Mouse>();
+            v = Mouse.ogwill;
         }
     }
-    
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Mouse")
+        {
+            mouse = other.gameObject;
+            Mouse = mouse.GetComponent<Mouse>();
+            Mouse.will--;
+            Debug.Log(Mouse.will);
+            mouse.GetComponent<CharacterController>().Move((transform.position-mouse.transform.position) *Time.deltaTime);
+        }
+    }
+
 }
+

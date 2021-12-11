@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BoutonPorte
   - MouseTrap
+  - Mouse
   - ReviveItem
   layers:
   - Default

@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerActions : MonoBehaviour
-{
+public class PlayerActions : MonoBehaviour {
 
     public float rayLength = 10f; 
     public int maxNumberOfMouseTraps = 3;
@@ -16,13 +15,20 @@ public class PlayerActions : MonoBehaviour
     public static event OpenDoor OnDoorButtonPressed;
 
     void Update () {
+        // create a mouse trap
         if (Input.GetKeyDown("x") && GetAmountOfMouseTraps() < maxNumberOfMouseTraps) CreateMouseTrap();
+        // delete a mouse trap
         else if (Input.GetKeyDown("y")) DeleteMouseTrap();
+        // open the garage door
         else if (Input.GetKeyDown("e") && CanPressButton()) {
             if (OnDoorButtonPressed != null)
                 OnDoorButtonPressed();
         }
     }
+
+    // ==============================================
+    //                Garage door
+    // ==============================================
 
     public bool CanPressButton () {
         
@@ -32,7 +38,10 @@ public class PlayerActions : MonoBehaviour
         return isEnoughNear && !isSabotaged;
     }
 
-    //MouseTraps
+    // ==============================================
+    //                Mouse traps
+    // ==============================================
+
     public void CreateMouseTrap () {
 
         GameObject m = Instantiate(
@@ -53,7 +62,6 @@ public class PlayerActions : MonoBehaviour
             }
         }
     }
-
 
     public GameObject[] GetMouseTraps () {
 

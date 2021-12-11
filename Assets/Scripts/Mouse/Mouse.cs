@@ -4,12 +4,18 @@ using UnityEngine;
 public class Mouse : MonoBehaviour
 {
 
-    public int will = 100;
-    private int hp = 100;
+    public int ogwill = 100;
+    public int hp = 100;
+    public int will;
     public int deadCount = 0;
     public GameObject mouse;
     public Transform teleportTarget;
     public GameObject collect;
+
+    void Start()
+    {
+        will = ogwill;
+    }
 
     void Update () {
         if(Input.GetKey("m")) {

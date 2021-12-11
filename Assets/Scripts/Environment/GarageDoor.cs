@@ -22,6 +22,7 @@ public class GarageDoor : MonoBehaviour
 
     void ChangeState () {
 
+        Debug.Log("test");
         if (doorOpened) doorAnimation.Play("GarageDoorClose", 0, 0.0f);
         else doorAnimation.Play("GarageDoorOpen", 0, 0.0f);
 
