@@ -5,9 +5,15 @@ using UnityEngine;
 public class Mouse : MonoBehaviour
 {
 
-    public int will = 100;
-    private int hp = 100;
+    public int ogwill = 100;
+    public int hp = 100;
+    public int will;
     public int deadCount = 0;
+
+    void Start()
+    {
+        will = ogwill;
+    }
 
     void Update () {
         if (hp <= 0) Respawn();
