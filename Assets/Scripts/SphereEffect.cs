@@ -6,7 +6,7 @@ public class SphereEffect : MonoBehaviour
 { 
 
     GameObject mouse, mouseFake;
-    MouseMovement mouseMovement;
+    Mouse Mouse;
     int v;
 
     void OnTriggerEnter(Collider other)
@@ -14,8 +14,8 @@ public class SphereEffect : MonoBehaviour
         if (other.gameObject.tag == "Mouse")
         {
             mouse = other.gameObject;
-            mouseMovement = mouse.GetComponent<MouseMovement>();
-            v = mouseMovement.ogwill;
+            Mouse = mouse.GetComponent<Mouse>();
+            v = Mouse.ogwill;
         }
     }
 
@@ -24,9 +24,9 @@ public class SphereEffect : MonoBehaviour
         if (other.gameObject.tag == "Mouse")
         {
             mouse = other.gameObject;
-            mouseMovement = mouse.GetComponent<MouseMovement>();
-            mouseMovement.will--;
-            Debug.Log(mouseMovement.will);
+            Mouse = mouse.GetComponent<Mouse>();
+            Mouse.will--;
+            Debug.Log(Mouse.will);
             mouse.GetComponent<CharacterController>().Move((transform.position-mouse.transform.position) *Time.deltaTime);
         }
     }
