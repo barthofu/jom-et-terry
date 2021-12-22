@@ -8,24 +8,13 @@ public class GarageDoor : MonoBehaviour
     public Animator doorAnimation;
 
     private bool doorOpened = false;
-    private float defaultHoldTime = 5.0f;
-    private float holdTime;
-    
-    private bool sabotaged = false;
-
-    void Start () {
-
-        holdTime = defaultHoldTime;
-    }
 
     void OnEnable () { 
-        PlayerAction_GarageDoor.OnDoorButtonPressed += ChangeState; 
-        MouseActions.OnSabotage += Sabotage; 
+        PlayerAction_GarageDoor.OnDoorButtonPressed += ChangeState;     
     }
 
     void OnDisable () { 
         PlayerAction_GarageDoor.OnDoorButtonPressed -= ChangeState; 
-        MouseActions.OnSabotage -= Sabotage;
     }
 
     void ChangeState () {
@@ -35,14 +24,4 @@ public class GarageDoor : MonoBehaviour
 
         doorOpened = !doorOpened;
     }
-
-    void Sabotage () {
-        Debug.Log("SABOTAGE");
-        sabotaged = !sabotaged;
-    }
-
-    public bool isSabotaged () {
-        return sabotaged;
-    }
-
 }

@@ -8,6 +8,7 @@ TagManager:
   - MouseTrap
   - Mouse
   - ReviveItem
+  - Relais
   layers:
   - Default
   - TransparentFX
