@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class Gun : MonoBehaviour {
+public class PlayerAction_Gun : MonoBehaviour {
 
     public int damages = 10;
     public float range = 100f;
 
     void Update() {
-        if (Input.GetButtonDown("Fire1")) {
+
+        if (Input.GetButtonDown("Fire1"))
             Shoot();
-        } 
     }
 
     void Shoot () {
