@@ -894,6 +894,7 @@ GameObject:
   - component: {fileID: 165369631}
   - component: {fileID: 165369630}
   - component: {fileID: 165369627}
+  - component: {fileID: 165369632}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1006,6 +1007,19 @@ MonoBehaviour:
   detectionRadius: 5
   garageDoorButton: {fileID: 1626112854}
   garageDoor: {fileID: 230440379}
+--- !u!114 &165369632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165369625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592181946fa2a214684573ed8edb629f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionRange: 5
 --- !u!1 &212830462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,6 +1457,7 @@ GameObject:
   - component: {fileID: 486376283}
   - component: {fileID: 486376282}
   - component: {fileID: 486376281}
+  - component: {fileID: 486376286}
   m_Layer: 0
   m_Name: Mouse
   m_TagString: Mouse
@@ -1533,6 +1548,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &486376286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486376280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111b4390f36d76e43bca606996efeef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionRange: 5
+  damages: 2
 --- !u!1 &490196176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,6 +1688,25 @@ Transform:
   m_Father: {fileID: 486376285}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &519076852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5796385710590230011, guid: a3d0f62c91b00ae448c0497bac0d593d,
+    type: 3}
+  m_PrefabInstance: {fileID: 640886369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &519076857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519076852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc87a2244e8b8f145916ec00262ed003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHp: 100
 --- !u!1 &531075265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,10 +1906,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.37
       objectReference: {fileID: 0}
+    - target: {fileID: 3159306737841916642, guid: a3d0f62c91b00ae448c0497bac0d593d,
+        type: 3}
+      propertyPath: m_Name
+      value: Relais
+      objectReference: {fileID: 0}
     - target: {fileID: 5796385709104953757, guid: a3d0f62c91b00ae448c0497bac0d593d,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 13.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5796385709274350160, guid: a3d0f62c91b00ae448c0497bac0d593d,
+        type: 3}
+      propertyPath: m_Name
+      value: Relais 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5796385709274350160, guid: a3d0f62c91b00ae448c0497bac0d593d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Relais
       objectReference: {fileID: 0}
     - target: {fileID: 5796385710529362352, guid: a3d0f62c91b00ae448c0497bac0d593d,
         type: 3}
@@ -1937,6 +2000,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "D\xE9cor"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5796385710590230011, guid: a3d0f62c91b00ae448c0497bac0d593d,
+        type: 3}
+      propertyPath: m_Name
+      value: Relais 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5796385710590230011, guid: a3d0f62c91b00ae448c0497bac0d593d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Relais
+      objectReference: {fileID: 0}
+    - target: {fileID: 5796385710705550874, guid: a3d0f62c91b00ae448c0497bac0d593d,
+        type: 3}
+      propertyPath: m_Name
+      value: Relais 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5796385710705550874, guid: a3d0f62c91b00ae448c0497bac0d593d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Relais
       objectReference: {fileID: 0}
     - target: {fileID: 5796385710753422706, guid: a3d0f62c91b00ae448c0497bac0d593d,
         type: 3}
@@ -2899,6 +2982,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847602665}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &895846520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5796385710705550874, guid: a3d0f62c91b00ae448c0497bac0d593d,
+    type: 3}
+  m_PrefabInstance: {fileID: 640886369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &895846525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895846520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc87a2244e8b8f145916ec00262ed003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHp: 100
 --- !u!1 &947747878
 GameObject:
   m_ObjectHideFlags: 0
@@ -5077,6 +5179,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1985068425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5796385709274350160, guid: a3d0f62c91b00ae448c0497bac0d593d,
+    type: 3}
+  m_PrefabInstance: {fileID: 640886369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1985068430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985068425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc87a2244e8b8f145916ec00262ed003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHp: 100
 --- !u!1 &2005555151
 GameObject:
   m_ObjectHideFlags: 0
