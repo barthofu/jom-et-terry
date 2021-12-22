@@ -1005,7 +1005,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRadius: 5
-  garageDoorButton: {fileID: 1626112854}
+  defaultHoldTime: 5
+  holdTime: 0
+  garageDoorButton: {fileID: 1472060275}
   garageDoor: {fileID: 230440379}
 --- !u!114 &165369632
 MonoBehaviour:
@@ -1456,7 +1458,6 @@ GameObject:
   - component: {fileID: 486376284}
   - component: {fileID: 486376283}
   - component: {fileID: 486376282}
-  - component: {fileID: 486376281}
   - component: {fileID: 486376286}
   m_Layer: 0
   m_Name: Mouse
@@ -1465,21 +1466,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &486376281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 486376280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b07ed9e112d9ce4d9c828c76a1a7570, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radiusGarageDoor: 6
-  garageDoor: {fileID: 230440379}
-  reviveCount: 0
 --- !u!114 &486376282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1492,7 +1478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f8ec8e4bdfeec48812907bec68c776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ogwill: 100
+  ogWill: 100
   hp: 100
   will: 100
   deadCount: 0
@@ -1707,6 +1693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseHp: 100
+  hp: 0
 --- !u!1 &531075265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3001,6 +2988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseHp: 100
+  hp: 0
 --- !u!1 &947747878
 GameObject:
   m_ObjectHideFlags: 0
@@ -4118,6 +4106,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447038811}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1472060275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 756d55620f4b0ba4f9f8b4c340b5801d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1319698324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1507964663
 GameObject:
   m_ObjectHideFlags: 0
@@ -5198,6 +5192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseHp: 100
+  hp: 0
 --- !u!1 &2005555151
 GameObject:
   m_ObjectHideFlags: 0

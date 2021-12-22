@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAction_GarageDoor : MonoBehaviour {
+public class PlayerAction_GarageDoor : RelaisInteraction {
 
-    public int detectionRadius = 5;
+    public string key = "e";
+
+    public float detectionRadius = 5.0f;
+
+    public float defaultHoldTime = 5.0f;
+    public float holdTime;
+
+    private float startTime = 0f;
+    private bool held = false;
 
     public GameObject garageDoorButton;
     public GameObject garageDoor;
@@ -14,17 +22,34 @@ public class PlayerAction_GarageDoor : MonoBehaviour {
 
     void Update() {
         
-        if (Input.GetKeyDown("e") && CanPressButton()) {
-            if (OnDoorButtonPressed != null)
-                OnDoorButtonPressed();
+        if (Input.GetKeyDown(key) && CanPressButton()) {
+            holdTime = (HowManyRelaisDown() + 1) * defaultHoldTime ;
+            startTime = Time.time;
         }
+
+        if (Input.GetKey(key) && CanPressButton() && !held)
+            if (startTime + holdTime <= Time.time) 
+                if (OnDoorButtonPressed != null) {
+                    held = true;
+                    OnDoorButtonPressed();
+                }
+
+        if (Input.GetKeyUp(key))
+            held = false;
     }
 
-    public bool CanPressButton () {
-        
-        bool isEnoughNear = (Vector3.Distance(transform.position, garageDoorButton.transform.position) < detectionRadius);
-        bool isSabotaged = garageDoor.GetComponent<GarageDoor>().isSabotaged();
+    public bool CanPressButton() {
+        return Vector3.Distance(transform.position, garageDoorButton.transform.position) < detectionRadius;
+    }
+    
+    private int HowManyRelaisDown() {
 
-        return isEnoughNear && !isSabotaged;
+        int totalDown = 0;
+
+        foreach (GameObject relais in allRelais)
+            if (relais.GetComponent<Relais>().IsDown()) 
+                totalDown++;
+
+        return totalDown;
     }
 }
