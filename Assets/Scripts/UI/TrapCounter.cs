@@ -7,19 +7,19 @@ public class TrapCounter : MonoBehaviour
 {
     int nbMouseTrap;
     public Text trapText;
-    PlayerActions playerActions;
+    PlayerAction_MouseTraps playerMouseTraps;
     GameObject player;
 
     void Start () {
 
         player = GameObject.Find("Player");
-        playerActions = player.GetComponent<PlayerActions>();
-        nbMouseTrap = playerActions.maxNumberOfMouseTraps - playerActions.GetAmountOfMouseTraps();
+        playerMouseTraps = player.GetComponent<PlayerAction_MouseTraps>();
+        nbMouseTrap = playerMouseTraps.maxNumberOfMouseTraps - playerMouseTraps.GetAmountOfMouseTraps();
     }
 
     // Update is called once per frame
     void Update () {
-        nbMouseTrap = playerActions.maxNumberOfMouseTraps - playerActions.GetAmountOfMouseTraps();
+        nbMouseTrap = playerMouseTraps.maxNumberOfMouseTraps - playerMouseTraps.GetAmountOfMouseTraps();
         trapText.text = "pièges : " + nbMouseTrap;
     }
 }
