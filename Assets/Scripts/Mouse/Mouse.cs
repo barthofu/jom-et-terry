@@ -4,7 +4,7 @@ using UnityEngine;
 public class Mouse : MonoBehaviour
 {
 
-    public int ogwill = 100;
+    public int ogWill = 100;
     public int hp = 100;
     public int will;
     public int deadCount = 0;
@@ -14,7 +14,7 @@ public class Mouse : MonoBehaviour
 
     void Start()
     {
-        will = ogwill;
+        will = ogWill;
     }
 
     void Update () {

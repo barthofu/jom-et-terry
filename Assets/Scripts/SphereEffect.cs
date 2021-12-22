@@ -15,7 +15,7 @@ public class SphereEffect : MonoBehaviour
         {
             mouse = other.gameObject;
             Mouse = mouse.GetComponent<Mouse>();
-            v = Mouse.ogwill;
+            v = Mouse.ogWill;
         }
     }
 
