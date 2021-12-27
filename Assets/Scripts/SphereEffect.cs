@@ -25,9 +25,16 @@ public class SphereEffect : MonoBehaviour
         {
             mouse = other.gameObject;
             Mouse = mouse.GetComponent<Mouse>();
-            Mouse.will--;
-            Debug.Log(Mouse.will);
-            mouse.GetComponent<CharacterController>().Move((transform.position-mouse.transform.position) *Time.deltaTime);
+            if (Mouse.will <= 0)
+            {
+                mouse.transform.position = transform.position;
+                Mouse.deadCount++;
+                mouse.GetComponent<CharacterController>().enabled=false;
+            } else{
+                Mouse.will--;
+                Debug.Log(Mouse.will);
+                mouse.GetComponent<CharacterController>().Move((transform.position - mouse.transform.position) * Time.deltaTime);
+            }
         }
     }
 
