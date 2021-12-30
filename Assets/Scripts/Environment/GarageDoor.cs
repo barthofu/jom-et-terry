@@ -10,11 +10,11 @@ public class GarageDoor : MonoBehaviour
     private bool doorOpened = false;
 
     void OnEnable () { 
-        PlayerAction_GarageDoor.OnDoorButtonPressed += ChangeState;     
+        HunterAction_GarageDoor.OnDoorButtonPressed += ChangeState;     
     }
 
     void OnDisable () { 
-        PlayerAction_GarageDoor.OnDoorButtonPressed -= ChangeState; 
+        HunterAction_GarageDoor.OnDoorButtonPressed -= ChangeState; 
     }
 
     void ChangeState () {
