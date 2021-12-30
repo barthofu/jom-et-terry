@@ -23,5 +23,7 @@ public class GarageDoor : MonoBehaviour
         else doorAnimation.Play("GarageDoorOpen", 0, 0.0f);
 
         doorOpened = !doorOpened;
+
+        GameObject.Find("_GameManager").GetComponent<GameManager>().FinishGame("hunter");
     }
 }
