@@ -5,11 +5,14 @@ using UnityEngine;
 public class Mouse : Player, IDamageable, IKillable {
 
     public int ogWill = 100;
-    
     public int will;
 
     public Transform teleportTarget;
     public GameObject collect;
+    public GameObject hpParticle;
+
+	public Vector3 defaultForce = new Vector3(0f,1f,0f);
+	public float defaultForceScatter = 0.5f;
 
     public void Start() {
         base.Start();
@@ -39,8 +42,23 @@ public class Mouse : Player, IDamageable, IKillable {
 
     }
 
+    void OnParticleCollision(GameObject other) {
+        
+        if (other.tag == "Spray") 
+            TakeDamages(1f);
+    }
+
     public void TakeDamages (float damages) {
+
         hp -= (int)damages;
+
+        GameObject newHp = Instantiate(hpParticle, transform.position, transform.rotation) as GameObject;
+        newHp.GetComponent<AlwaysFace>().Target = Camera.main.gameObject;
+
+        TextMesh textMesh = newHp.transform.Find("HPLabel").GetComponent<TextMesh>();
+        textMesh.text = string.Format("{0:N0}", damages);
+
+        newHp.GetComponent<Rigidbody>().AddForce(new Vector3(defaultForce.x + Random.Range(-defaultForceScatter,defaultForceScatter),defaultForce.y + Random.Range(-defaultForceScatter,defaultForceScatter),defaultForce.z + Random.Range(-defaultForceScatter,defaultForceScatter)));
     }
 
     public void Kill () {
