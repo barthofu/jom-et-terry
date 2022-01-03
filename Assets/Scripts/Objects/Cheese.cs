@@ -5,14 +5,19 @@ using UnityEngine.UI;
 
 public class Cheese : MonoBehaviour
 {
-    int cheeseResistance = 10000;
-    public Slider slider;
+    public int ogCheeseResistance = 10000;
+    public int cheeseResistance;
+
+    void Start()
+    {
+        cheeseResistance = ogCheeseResistance;
+    }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Mouse")
         {
-
+            
         }
     }
 
@@ -20,14 +25,13 @@ public class Cheese : MonoBehaviour
     {
         if (other.gameObject.tag == "Mouse")
         {
-
             Debug.Log(cheeseResistance);
-            slider.value = cheeseResistance / 10000;
             cheeseResistance--;
+
             if (cheeseResistance <= 0)
                 Debug.Log("the mice have won");
-            else { 
-                
+            else {
+
             }
 
 
