@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     void Awake() {
 
         hunterCamera.enabled = true;
+        // Cursor.visible = true;
     }
 
     void Update() {
