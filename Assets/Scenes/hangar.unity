@@ -6906,6 +6906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ogCheeseResistance: 10000
   cheeseResistance: 0
+  cheeseSlider: {fileID: 1690723675}
 --- !u!135 &413868416
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MouseTrapEffect : MonoBehaviour
 { 
@@ -8,6 +9,7 @@ public class MouseTrapEffect : MonoBehaviour
     GameObject mouse, mouseFake;
     Mouse Mouse;
     int v;
+    public Slider willSlider;
 
     void OnTriggerEnter(Collider other)
     {
@@ -16,6 +18,7 @@ public class MouseTrapEffect : MonoBehaviour
             mouse = other.gameObject;
             Mouse = mouse.GetComponent<Mouse>();
             v = Mouse.ogWill;
+            willSlider.enabled = true;
         }
     }
 
@@ -35,6 +38,14 @@ public class MouseTrapEffect : MonoBehaviour
                 Debug.Log(Mouse.will);
                 mouse.GetComponent<CharacterController>().Move((transform.position - mouse.transform.position) * Time.deltaTime);
             }
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Mouse")
+        {
+            willSlider.enabled = false;
         }
     }
 
