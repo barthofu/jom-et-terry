@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bf75464bdaa5afe43ad5cee669871284
+guid: f7142d4afcd3e5745a6dddfa684c0b7b
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -30,33 +30,6 @@ ModelImporter:
   - first:
       74: 5974360926875314362
     second: "Base pi\xE8ge|Point miroir crochetAction"
-  - first:
-      74: 1693896421822825271
-    second: "Camera|Base pi\xE8geAction"
-  - first:
-      74: -2273456802902527425
-    second: Camera|bigoudiAction
-  - first:
-      74: 8440248360967096626
-    second: Camera|CameraAction
-  - first:
-      74: -1914889067304438425
-    second: Camera|crochet loquetAction
-  - first:
-      74: -2131838331811537809
-    second: Camera|EcraseRatAction
-  - first:
-      74: -1334326123144198471
-    second: Camera|jsp mais loquetAction
-  - first:
-      74: 8835656609798817996
-    second: Camera|lumiereAction
-  - first:
-      74: -5343313158301568435
-    second: Camera|Point miroir bigoudiAction
-  - first:
-      74: -898135278604714188
-    second: Camera|Point miroir crochetAction
   - first:
       74: 3948016682425701679
     second: "EcraseRat|Base pi\xE8geAction"
@@ -111,33 +84,6 @@ ModelImporter:
   - first:
       74: 4331955645865930262
     second: bigoudi|Point miroir crochetAction
-  - first:
-      74: 3107338585720964791
-    second: "lumiere|Base pi\xE8geAction"
-  - first:
-      74: 322763496152362417
-    second: lumiere|bigoudiAction
-  - first:
-      74: -3473335783374923047
-    second: lumiere|CameraAction
-  - first:
-      74: -7702157438232118798
-    second: lumiere|crochet loquetAction
-  - first:
-      74: 388544634980946682
-    second: lumiere|EcraseRatAction
-  - first:
-      74: -8818360787736266430
-    second: lumiere|jsp mais loquetAction
-  - first:
-      74: -244157991949360228
-    second: lumiere|lumiereAction
-  - first:
-      74: 3789177053196209744
-    second: lumiere|Point miroir bigoudiAction
-  - first:
-      74: -1388613557983994995
-    second: lumiere|Point miroir crochetAction
   - first:
       74: -1914414069723368083
     second: "jsp mais loquet|Base pi\xE8geAction"
