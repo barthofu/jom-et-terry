@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 4958699796748298796}
   - component: {fileID: 4958699796748298797}
   - component: {fileID: 4958699796748298793}
+  - component: {fileID: 8584881296928968331}
   m_Layer: 0
   m_Name: Mouse
   m_TagString: Mouse
@@ -181,6 +182,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionRange: 5
   damages: 2
+--- !u!65 &8584881296928968331
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958699796748298799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4958699796751820199
 GameObject:
   m_ObjectHideFlags: 0
