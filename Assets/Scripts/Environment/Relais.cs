@@ -7,7 +7,7 @@ public class Relais : MonoBehaviour
 
     public int baseHp = 100;
     public int hp;
-
+    public GameObject relaisSlider;
     void Start() {
         hp = baseHp;
         InvokeRepeating("RegenHp", 0.0f, 1f);

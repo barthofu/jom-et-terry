@@ -26,7 +26,6 @@ public class Cheese : MonoBehaviour
     {
         if (other.gameObject.tag == "Mouse")
         {
-            Debug.Log(cheeseResistance);
             cheeseResistance--;
 
             if (cheeseResistance <= 0)
