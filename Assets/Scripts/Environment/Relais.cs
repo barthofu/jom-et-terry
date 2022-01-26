@@ -7,6 +7,7 @@ public class Relais : MonoBehaviour
 
     public int baseHp = 100;
     public int hp;
+    public ParticleSystem smoke;
 
     void Start() {
         hp = baseHp;
@@ -15,6 +16,11 @@ public class Relais : MonoBehaviour
 
     void Update() {
         
+        // if (hp <= 0) {
+        //     smoke.play();
+        // } else {
+        //     smoke.stop();
+        // }
     }
 
     private void RegenHp() {

@@ -22,14 +22,14 @@ public class Mouse : Player, IDamageable, IKillable {
     }
 
     void Update() {
+        
+        if (hp <= 0 /** && collect.GetComponent<collectReviveItem>().getItemCount() > 0 **/) 
+            Kill();
 
         if (!gameManager.hunterIsPlaying && !gameManager.isGameFinished) {
 
             Move();
             Fall();
-
-            if (hp <= 0 && collect.GetComponent<collectReviveItem>().getItemCount() > 0) 
-                Kill();
 
             // for debugging purposes
             if (Input.GetKey("m")) {
@@ -40,6 +40,14 @@ public class Mouse : Player, IDamageable, IKillable {
             controller.Move(velocity * Time.deltaTime);
         }
 
+    }
+
+    void OnTriggerEnter (Collider other) {
+        Debug.Log("Collision with " + other.name + " detected.");
+        if (other.name == "Hunter") {
+            Debug.Log("Hunter is dead.");
+            hp = 0;
+        }
     }
 
     void OnParticleCollision(GameObject other) {
