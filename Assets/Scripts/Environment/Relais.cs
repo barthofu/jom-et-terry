@@ -8,19 +8,27 @@ public class Relais : MonoBehaviour
     public int baseHp = 100;
     public int hp;
     public ParticleSystem smoke;
+    // private Animator animator;
 
     void Start() {
         hp = baseHp;
         InvokeRepeating("RegenHp", 0.0f, 1f);
+        // animator = GetComponent<Animator>();
     }
 
     void Update() {
+
+        // if (animator != null && animator.isActiveAndEnabled) {
         
-        // if (hp <= 0) {
-        //     smoke.play();
-        // } else {
-        //     smoke.stop();
+            if (hp <= 0) {
+                smoke.Play();
+                // animator.SetBool("isDown", true);
+            } else {
+                smoke.Stop();
+                // animator.SetBool("isDown", false);
+            }
         // }
+
     }
 
     private void RegenHp() {

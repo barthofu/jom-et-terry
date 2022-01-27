@@ -43,7 +43,6 @@ public class Mouse : Player, IDamageable, IKillable {
     }
 
     void OnTriggerEnter (Collider other) {
-        Debug.Log("Collision with " + other.name + " detected.");
         if (other.name == "Hunter") {
             Debug.Log("Hunter is dead.");
             hp = 0;
@@ -61,8 +60,9 @@ public class Mouse : Player, IDamageable, IKillable {
         hp -= (int)damages;
 
         GameObject newHp = Instantiate(hpParticle, transform.position, transform.rotation) as GameObject;
-        newHp.GetComponent<AlwaysFace>().Target = Camera.main.gameObject;
+        //newHp.GetComponent<AlwaysFace>().Target = Camera.main.gameObject;
 
+        Debug.Log(string.Format("{0:N0}", damages));
         TextMesh textMesh = newHp.transform.Find("HPLabel").GetComponent<TextMesh>();
         textMesh.text = string.Format("{0:N0}", damages);
 

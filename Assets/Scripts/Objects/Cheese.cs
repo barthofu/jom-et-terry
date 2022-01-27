@@ -27,11 +27,11 @@ public class Cheese : MonoBehaviour
         {
             cheeseResistance--;
 
-            if (cheeseResistance <= 0)
-                Debug.Log("the mice have won");
-            else {
+            // if (cheeseResistance <= 0)
+            //     Debug.Log("the mice have won");
+            // else {
 
-            }
+            // }
 
 
         }
