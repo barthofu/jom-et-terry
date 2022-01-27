@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public float gravity;
     protected CharacterController controller;
     protected Vector3 velocity = Vector3.zero;
-    protected GameManager gameManager;
+    public GameManager gameManager;
 
     public void Start() {
         

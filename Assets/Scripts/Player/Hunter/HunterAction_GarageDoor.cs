@@ -16,12 +16,24 @@ public class HunterAction_GarageDoor : RelaisInteraction {
 
     public GameObject garageDoorButton;
     public GameObject garageDoor;
-    
+
+
+    public GameObject interactText;
+
     public delegate void OpenDoor();
     public static event OpenDoor OnDoorButtonPressed;
-
+    int i;
     void Update() {
-        
+
+        if (CanPressButton())
+        {
+            interactText.SetActive(true);
+            i = 0;
+        }else if(i==0)
+        {
+            interactText.SetActive(false);
+            i++;
+        }
         if (Input.GetKeyDown(key) && CanPressButton()) {
             holdTime = (HowManyRelaisDown() + 1) * defaultHoldTime ;
             startTime = Time.time;
@@ -31,7 +43,8 @@ public class HunterAction_GarageDoor : RelaisInteraction {
             if (startTime + holdTime <= Time.time) 
                 if (OnDoorButtonPressed != null) {
                     held = true;
-                    OnDoorButtonPressed();
+                    //OnDoorButtonPressed();
+                    GetComponent<Hunter>().gameManager.FinishGame("hunter");
                 }
 
         if (Input.GetKeyUp(key))
@@ -39,7 +52,11 @@ public class HunterAction_GarageDoor : RelaisInteraction {
     }
 
     public bool CanPressButton() {
-        return Vector3.Distance(transform.position, garageDoorButton.transform.position) < detectionRadius;
+
+        bool isNearEnough = Vector3.Distance(transform.position, garageDoorButton.transform.position) < detectionRadius;
+        bool isTimerFinished = GetComponent<Hunter>().gameManager.IsTimerFinished();
+
+        return isNearEnough && isTimerFinished;
     }
     
     private int HowManyRelaisDown() {

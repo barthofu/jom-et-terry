@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SliderControl : MonoBehaviour
+public class CheeseSliderController : MonoBehaviour
 {
 
     public Slider slider;
@@ -22,3 +22,4 @@ public class SliderControl : MonoBehaviour
         slider.value = 10000 - cheese.cheeseResistance;
     }
 }
+

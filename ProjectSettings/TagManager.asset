@@ -9,6 +9,9 @@ TagManager:
   - Mouse
   - ReviveItem
   - Relais
+  - Spray
+  - Effect
+  - Caisse
   layers:
   - Default
   - TransparentFX
