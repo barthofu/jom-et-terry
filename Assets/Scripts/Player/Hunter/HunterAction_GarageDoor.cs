@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class HunterAction_GarageDoor : RelaisInteraction {
 
@@ -17,12 +18,19 @@ public class HunterAction_GarageDoor : RelaisInteraction {
     public GameObject garageDoorButton;
     public GameObject garageDoor;
 
-
+    Controls controls;
     public GameObject interactText;
 
     public delegate void OpenDoor();
     public static event OpenDoor OnDoorButtonPressed;
     int i;
+
+    void Awake()
+    {
+        controls = new Controls();
+    }
+
+
     void Update() {
 
         if (CanPressButton())
@@ -34,22 +42,40 @@ public class HunterAction_GarageDoor : RelaisInteraction {
             interactText.SetActive(false);
             i++;
         }
-        if (Input.GetKeyDown(key) && CanPressButton()) {
-            holdTime = (HowManyRelaisDown() + 1) * defaultHoldTime ;
+        controls.Player.Action.started += ctx => StartPressButton();
+        controls.Player.Action.performed += ctx => PressButton();
+        controls.Player.Action.canceled += ctx => held = false; ;
+
+
+            
+    }
+
+    void StartPressButton()
+    {
+        if (CanPressButton())
+        {
+            holdTime = (HowManyRelaisDown() + 1) * defaultHoldTime;
             startTime = Time.time;
         }
+    }
 
-        if (Input.GetKey(key) && CanPressButton() && !held)
-            if (startTime + holdTime <= Time.time) 
-                if (OnDoorButtonPressed != null) {
+    void PressButton()
+    {
+        if (CanPressButton() && !held)
+        {
+            if (startTime + holdTime <= Time.time)
+            {
+                if (OnDoorButtonPressed != null)
+                {
                     held = true;
                     //OnDoorButtonPressed();
                     GetComponent<Hunter>().gameManager.FinishGame("hunter");
                 }
-
-        if (Input.GetKeyUp(key))
-            held = false;
+            }
+        }
     }
+
+
 
     public bool CanPressButton() {
 

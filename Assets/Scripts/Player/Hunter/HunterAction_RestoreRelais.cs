@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class HunterAction_RestoreRelais : RelaisInteraction
 {
-
+    Controls controls;
     public float actionRange = 5.0f;
     public string key = "e";
     private GameObject relais;
     public GameObject interactText;
     int i;
+    void Awake()
+    {
+        controls = new Controls();
+    }
     void Update() {
         if(relais) relais.GetComponent<Relais>().relaisSlider.SetActive(false);
         
@@ -19,7 +24,7 @@ public class HunterAction_RestoreRelais : RelaisInteraction
             interactText.SetActive(true);
             i = 0;
             relais.GetComponent<Relais>().relaisSlider.SetActive(true);
-            if (Input.GetKey(key)) relais.GetComponent<Relais>().Restore();
+            controls.Player.Action.performed += ctx => relais.GetComponent<Relais>().Restore();
         }
         else if (i==0)
         {

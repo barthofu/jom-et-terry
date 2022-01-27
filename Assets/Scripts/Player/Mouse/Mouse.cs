@@ -1,6 +1,9 @@
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Mouse : Player, IDamageable, IKillable {
 
@@ -10,10 +13,17 @@ public class Mouse : Player, IDamageable, IKillable {
     public Transform teleportTarget;
     public GameObject collect;
     public GameObject hpParticle;
-
-	public Vector3 defaultForce = new Vector3(0f,1f,0f);
+    Controls controls;
+    public Vector3 defaultForce = new Vector3(0f,1f,0f);
 	public float defaultForceScatter = 0.5f;
+    Vector2 movement, camerarotation;
 
+    public Camera myCamera;
+    public CameraMovement cameramovement;
+    void Awake()
+    {
+        controls = new Controls();
+    }
     public void Start() {
         base.Start();
         
@@ -25,22 +35,21 @@ public class Mouse : Player, IDamageable, IKillable {
 
         if (!gameManager.hunterIsPlaying && !gameManager.isGameFinished) {
 
-            Move();
+            controls.Mouse.Move.performed += ctx => movement= ctx.ReadValue<Vector2>() ;
+            Move(movement);
             Fall();
+            controls.Mouse.Camera.performed += ctx => camerarotation = ctx.ReadValue<Vector2>();
+            cameramovement.CameraMove(camerarotation);
 
-            if (hp <= 0 && collect.GetComponent<collectReviveItem>().getItemCount() > 0) 
-                Kill();
-
-            // for debugging purposes
-            if (Input.GetKey("m")) {
-                TakeDamages(1);
-                Debug.Log(hp);
-            }
+            if (hp <= 0 && collect.GetComponent<collectReviveItem>().getItemCount() > 0) Kill();
 
             controller.Move(velocity * Time.deltaTime);
         }
 
     }
+
+
+
 
     void OnParticleCollision(GameObject other) {
         

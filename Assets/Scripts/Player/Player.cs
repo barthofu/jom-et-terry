@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class Player : MonoBehaviour
     public float speed;
     public int hp;
     public int deadCount = 0;
-
+    Controls controls;
     public float gravity;
     protected CharacterController controller;
     protected Vector3 velocity = Vector3.zero;
@@ -20,11 +21,15 @@ public class Player : MonoBehaviour
         gravity = gameManager.gravity;
         controller = GetComponent<CharacterController>();
     }
+    void Awake()
+    {
+        controls = new Controls();
+    }
 
-    public void Move() {
+    public void Move(Vector2 movement) {
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        float x = movement.x;
+        float z = movement.y;
 
         Vector3 move = transform.right * x + transform.forward * z;
         move *= speed;

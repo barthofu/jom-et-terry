@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using System;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class GameManager : MonoBehaviour
     public float timer;
 
     public float gravity;
-
     public PlayableDirector truckPicksCheese;
 
     public Camera hunterCamera;
@@ -20,8 +20,13 @@ public class GameManager : MonoBehaviour
 
     public bool hunterIsPlaying = true;
 
+    Controls controls;
+
     void Awake() {
 
+    
+        controls = new Controls();
+        
         hunterCamera.enabled = true;
         mouseCamera.enabled = false;
         
@@ -31,19 +36,10 @@ public class GameManager : MonoBehaviour
 
         if (timer > 0)
             timer -= Time.deltaTime;
-
-        if (Input.GetKeyDown("w"))
-            SwitchPlayer();
+        
     }
 
-    // PLAYER SWITCH
-
-    private void SwitchPlayer() {
-
-        hunterIsPlaying = !hunterIsPlaying;
-        hunterCamera.enabled = !hunterCamera.enabled;
-        mouseCamera.enabled = !mouseCamera.enabled;
-    }
+    
 
     // TIMER
 

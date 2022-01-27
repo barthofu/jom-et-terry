@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class HunterAction_Shoot : MonoBehaviour {
 
@@ -7,18 +8,25 @@ public class HunterAction_Shoot : MonoBehaviour {
 
     public ParticleSystem spray;
     public ParticleSystem gas;
+    Controls controls;
+
+    void Awake()
+    {
+        controls = new Controls();
+    }
 
     void Update() {
 
-        if (Input.GetButtonDown("Fire1")) {
+        controls.Player.spray.performed += ctx => {
             spray.Play();
             gas.Play();
             Shoot();
-        }
-        else if (Input.GetButtonUp("Fire1")) {
+        };
+        controls.Player.spray.performed += ctx =>
+        {
             spray.Stop();
             gas.Stop();
-        }
+        };
     }
 
     void Shoot() {
