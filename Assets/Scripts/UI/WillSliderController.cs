@@ -7,18 +7,18 @@ public class WillSliderController : MonoBehaviour
 {
 
     public Slider slider;
-    public GameObject Mouse;
-    Mouse mouse;
+    public GameObject Relais;
+    Relais relais;
 
     public void Start()
     {
-        mouse = Mouse.GetComponent<Mouse>();
-        slider.maxValue = mouse.ogWill;
+        relais = Relais.GetComponent<Relais>();
+        slider.maxValue = relais.baseHp;
     }
 
     public void Update()
     {
 
-        slider.value = slider.maxValue - mouse.will;
+        slider.value = relais.hp;
     }
 }

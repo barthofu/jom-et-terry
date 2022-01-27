@@ -10,6 +10,8 @@ public class Relais : MonoBehaviour
     public ParticleSystem smoke;
     // private Animator animator;
 
+    public GameObject relaisSlider;
+    
     void Start() {
         hp = baseHp;
         InvokeRepeating("RegenHp", 0.0f, 1f);

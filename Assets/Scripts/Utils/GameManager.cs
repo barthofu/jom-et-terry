@@ -16,12 +16,15 @@ public class GameManager : MonoBehaviour
 
     public Camera hunterCamera;
     public Camera mouseCamera;
+    public GameObject ui;
 
     public bool hunterIsPlaying = true;
 
     void Awake() {
 
         hunterCamera.enabled = true;
+        mouseCamera.enabled = false;
+        
     }
 
     void Update() {
@@ -55,7 +58,7 @@ public class GameManager : MonoBehaviour
         isGameFinished = true;
         hunterCamera.enabled = false;
         mouseCamera.enabled = false;
-
+        ui.SetActive(false);
         if (whoWon == "hunter")
             HunterWon();
         else 

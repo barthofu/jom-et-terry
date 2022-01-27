@@ -19,7 +19,6 @@ public class HealthSliderController : MonoBehaviour
     public void Update()
     {
 
-        slider.value = slider.maxValue - mouse.hp;
-        ;
+        slider.value = mouse.hp;
     }
 }

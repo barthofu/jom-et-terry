@@ -7,6 +7,7 @@ public class Cheese : MonoBehaviour
 {
     public int ogCheeseResistance = 10000;
     public int cheeseResistance;
+    public GameObject cheeseSlider;
 
     void Start()
     {
@@ -17,7 +18,7 @@ public class Cheese : MonoBehaviour
     {
         if (other.gameObject.tag == "Mouse")
         {
-            
+            cheeseSlider.SetActive(true);
         }
     }
 
@@ -36,6 +37,15 @@ public class Cheese : MonoBehaviour
 
         }
     }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Mouse")
+        {
+            cheeseSlider.SetActive(false);
+        }
+    }
+
 
 
 }
